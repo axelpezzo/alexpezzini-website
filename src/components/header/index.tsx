@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/assets/logo.png";
@@ -6,6 +7,19 @@ import LangSwitcher from "../switcher/lang-switcher";
 import { Container } from "../container";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const menuItems = [
     { name: "Intro", href: "/" },
     { name: "Carriera", href: "/about" },
@@ -15,7 +29,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-primary-1000">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-colors ${
+        isScrolled ? "bg-primary-1000" : "bg-transparent"
+      }`}
+    >
       <Container>
         <div className="flex items-center justify-between py-6">
           {/* Logo */}
@@ -36,7 +54,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white relative transition-colors py-2 px-2 link-underline font-semibold"
+                  className="text-white relative transition-colors py-2 px-2 link-underline font-semibold text-sm"
                 >
                   {item.name}
                 </Link>

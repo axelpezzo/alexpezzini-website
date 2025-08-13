@@ -14,9 +14,9 @@ const SectionHome_1 = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    let typingSpeed = 100; // velocità di scrittura
-    let deletingSpeed = 60; // velocità di cancellazione
-    let pause = 1000; // pausa tra una parola e l'altra
+    let typingSpeed = 100;
+    let deletingSpeed = 40;
+    let pause = 1000;
 
     const currentWord = words[wordIndex % words.length];
 
@@ -42,13 +42,13 @@ const SectionHome_1 = () => {
   }, [text, isDeleting, wordIndex]);
 
   return (
-    <div className="h-screen w-full bg-gradient-to-b from-primary-1000 to-primary-600">
+    <div className="h-screen w-full bg-gradient-to-b from-primary-1000 to-primary-800">
       <Container>
         <div className="flex flex-col justify-center h-screen w-full text-white">
-          <h1>Ciao, sono Alex Pezzini</h1>
-          <h2>
+          <h1 className="mb-1">Ciao, sono Alex Pezzini</h1>
+          <h2 className="mb-0">
             sono uno{" "}
-            <span className="border-r-2 border-white animate-blink">
+            <span className="border-r-2 border-white animate-blink text-secondary-600">
               {text}
             </span>
           </h2>
