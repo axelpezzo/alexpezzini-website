@@ -10,7 +10,9 @@ export const Container = ({
   return (
     <div
       className={twMerge(
-        `mx-auto ${getContainerSize(size)} ${getContainerPadding(size)}`,
+        `mx-auto relative ${getContainerSize(size)} ${getContainerPadding(
+          size
+        )}`,
         className
       )}
     >

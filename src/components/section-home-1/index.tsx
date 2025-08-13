@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Dev from "@/assets/images/dev.svg";
 import { Container } from "../container";
 
 const words = [
