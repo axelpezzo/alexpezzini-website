@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Dev from "@/assets/images/dev.svg";
+import Image from "next/image";
+import Bg1 from "@/assets/images/bg-1.jpg";
 import { Container } from "../container";
+import MouseIcon from "../mouse-icon";
 
 const words = [
   "Sviluppatore Fullstack",
@@ -42,19 +44,39 @@ const SectionHome_1 = () => {
     return () => clearTimeout(timeout);
   }, [text, isDeleting, wordIndex]);
 
+  const handleScroll = () => {
+    const target = document.getElementById("section-home-2");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="h-screen w-full bg-gradient-to-b from-primary-1000 to-primary-800">
+    <div className="relative h-screen w-full" id="section-home-1">
+      {/* Immagine di sfondo */}
+      <Image src={Bg1} alt="Sfondo" fill priority className="object-cover" />
+
+      {/* Overlay con gradiente */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-1000 to-primary-800 opacity-50"></div>
+
+      {/* Contenuto */}
       <Container>
-        <div className="flex flex-col justify-center h-screen w-full text-white">
+        <div className="relative flex flex-col justify-center h-screen w-full text-white">
           <h1 className="mb-1">Ciao, sono Alex Pezzini</h1>
           <h2 className="mb-0">
             sono uno{" "}
-            <span className="border-r-2 border-white animate-blink text-secondary-600">
+            <span className="border-r-2 border-white animate-blink text-primary-500">
               {text}
             </span>
           </h2>
         </div>
       </Container>
+      <div
+        className="absolute bottom-0 left-0 right-0 m-auto w-8 pb-8 cursor-pointer"
+        onClick={handleScroll}
+      >
+        <MouseIcon />
+      </div>
     </div>
   );
 };

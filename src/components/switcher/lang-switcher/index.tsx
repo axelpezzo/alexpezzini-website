@@ -50,7 +50,7 @@ const LangSwitcher = () => {
 
   return (
     <button
-      className="flex gap-2 justify-center px-2 py-2 w-16 rounded bg-primary-600 text-white transition cursor-pointer text-xs hover:bg-primary-900"
+      className="flex gap-2 justify-center px-2 py-2 w-16 rounded bg-primary-700 text-white transition cursor-pointer text-xs hover:bg-primary-600"
       aria-label="Switch the language"
       onClick={handleSwitch}
     >

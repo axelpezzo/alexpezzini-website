@@ -3,7 +3,10 @@ import { Container } from "../container";
 
 const SectionHome_2 = () => {
   return (
-    <div className="h-full w-full relative bg-white overflow-hidden">
+    <div
+      className="h-full w-full relative bg-white overflow-hidden"
+      id="section-home-2"
+    >
       <Container>
         <div className="py-32">
           <h2>Carriera</h2>

@@ -47,14 +47,14 @@ const Header = () => {
             </Link>
           </div>
           {/* Header actions */}
-          <div className="flex items-center space-x-8 bg-primary-800 pl-8 pr-4 py-2 rounded-xl">
+          <div className="flex items-center space-x-8 bg-primary-900 pl-8 pr-4 py-2 rounded-xl">
             {/* Menu */}
             <nav className="flex items-center gap-6">
               {menuItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white relative transition-colors py-2 px-2 link-underline font-semibold text-sm"
+                  className="text-white relative transition-colors no-underline py-2 px-2 link-underline font-semibold text-sm"
                 >
                   {item.name}
                 </Link>

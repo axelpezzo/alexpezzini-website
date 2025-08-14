@@ -2,26 +2,16 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary-100: #f7ecff;
-  --color-primary-200: #e7d6fb;
-  --color-primary-300: #caaaf1;
-  --color-primary-400: #ac7ce8;
-  --color-primary-500: #9354e0;
-  --color-primary-600: #833bdb;
-  --color-primary-700: #7b2eda;
-  --color-primary-800: #6921c2;
-  --color-primary-900: #5d1cae;
-  --color-primary-1000: #501599;
-  --color-secondary-100: #ffebff;
-  --color-secondary-200: #f5d5fb;
-  --color-secondary-300: #e6a8f3;
-  --color-secondary-400: #d779eb;
-  --color-secondary-500: #cb51e4;
-  --color-secondary-600: #c337e0;
-  --color-secondary-700: #c02adf;
-  --color-secondary-800: #a91cc6;
-  --color-secondary-900: #9715b1;
-  --color-secondary-1000: #84099c;
+  --color-primary-100: #f5ecff;
+  --color-primary-200: #e4d5fc;
+  --color-primary-300: #c6a7f4;
+  --color-primary-400: #a677ec;
+  --color-primary-500: #8b4ee6;
+  --color-primary-600: #7a34e2;
+  --color-primary-700: #7126e2;
+  --color-primary-800: #631bcf;
+  --color-primary-900: #5516b4;
+  --color-primary-1000: #490f9f;
 }
 
 @layer base {
@@ -101,6 +91,19 @@
 
   .animate-blink {
     animation: blink 1s step-end infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(80px);
+    }
+  }
+
+  svg #wheel {
+    animation: scroll ease 2s infinite;
   }
 }
 
