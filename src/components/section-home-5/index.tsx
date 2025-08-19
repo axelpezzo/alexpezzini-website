@@ -13,8 +13,8 @@ const SectionHome_5 = () => {
       id="section-home-5"
     >
       <Container>
-        <div className="py-32">
-          <h2 className="mb-20">Contatti</h2>
+        <div className="py-24 lg:py-32">
+          <h2 className="mb-12 lg:mb-20">Contatti</h2>
           <h3 className="mb-10">Per qualunque informazione puoi:</h3>
           <div className="flex flex-col gap-6">
             <a

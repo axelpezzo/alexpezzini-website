@@ -77,6 +77,13 @@
     line-height: 1.25rem;
   }
 
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+
   @keyframes blink {
     0%,
     50%,

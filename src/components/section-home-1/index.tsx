@@ -63,7 +63,7 @@ const SectionHome_1 = () => {
       <Container>
         <div className="relative flex flex-col justify-center h-screen w-full text-white">
           <h1 className="mb-1">Ciao, sono Alex Pezzini</h1>
-          <h2 className="mb-0">
+          <h2 className="mb-0 text-[2rem] leading-[2rem] min-h-[6rem] lg:min-h-auto">
             sono uno{" "}
             <span className="border-r-2 border-white animate-blink text-primary-500">
               {text}

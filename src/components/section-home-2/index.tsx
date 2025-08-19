@@ -8,7 +8,7 @@ const SectionHome_2 = () => {
       id="section-home-2"
     >
       <Container>
-        <div className="py-32">
+        <div className="py-24 lg:py-32">
           <h2>Carriera</h2>
           <div>
             <p>

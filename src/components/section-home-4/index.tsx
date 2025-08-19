@@ -9,8 +9,8 @@ const SectionHome_4 = () => {
       id="section-home-4"
     >
       <Container>
-        <div className="py-32">
-          <h2 className="mb-20">Formazione</h2>
+        <div className="py-24 lg:py-32">
+          <h2 className="mb-12 lg:mb-20">Formazione</h2>
           <div className="flex flex-col gap-12">
             <div className="flex flex-col md:flex-row gap-10 w-full">
               {/* Testo - 2/3 da desktop */}
@@ -30,7 +30,7 @@ const SectionHome_4 = () => {
               </div>
 
               {/* Logo/Icona - 1/3 da desktop */}
-              <div className="relative -top-10 md:w-1/3">
+              <div className="relative -top-4 lg:-top-10 w-[80%] mx-auto md:w-1/3">
                 <Education />
               </div>
             </div>
