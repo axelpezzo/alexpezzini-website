@@ -1,0 +1,21 @@
+{
+  "Section_1": {
+    "title": "Hey, I'm Alex Pezzini",
+    "subtitle": "and I'm a ",
+    "skill_1": "Fullstack Developer",
+    "skill_2": "Web & Ecommerce Developer",
+    "skill_3": "Mobile Developer"
+  },
+  "Section_2": {
+    "title": "Career",
+    "p_1": "Following my initial experiences in the web industries, where I designed e-commerce solutions, I embarked on a career as a <strong>full-stack developer</strong> at a digital communication agency. Over time, I had the opportunity to lead a team in developing web solutions for major national brands such as <i>Paluani, Borsalino, Bertazzoni</i>, and <i>Fedrigoni</i>. All projects were built with <strong>Drupal</strong>, a powerful and versatile open-source CMS. I also actively participated in the community, contributing to its development and attending national and international events.",
+    "p_2": "During this period, I gained comprehensive experience in managing digital projects: I handled client relationships, implemented and managed web infrastructure using <strong>Amazon Web Services (AWS)</strong>, and paid special attention to UI and SEO design.",
+    "p_3": "Today, I am a <strong>web/mobile developer</strong> at <link>Intesys</link>, a company that has been part of the Lynx group since 2025. As a member of the front-end team, I work daily on projects for the Industrial and Fintech sectors, primarily using <i>React, Typescript</i>, and <i>Next.js</i> in headless projects with third-party integrations.",
+    "p_4": "In parallel, I have a passion for sharing my knowledge and experience in the field by teaching <strong>full-stack web development</strong> at the <link>ITS Digital Academy</link>, where I pass on skills, methodologies, and best practices to the next generation of developers.",
+    "skill_title": "Skills",
+    "skill_1": "<strong>Platforms:</strong> Drupal, Strapi, Payload CMS, BigCommerce, HubSpot",
+    "skill_2": "<strong>Infrastructure:</strong> Amazon Web Services, Docker, Kubernetes, GitHub / GitLab",
+    "skill_3": "<strong>Backend:</strong> Node.js, PHP, GraphQL, REST APIs",
+    "skill_4": "<strong>Frontend:</strong> React, Next.js, TypeScript, Tailwind CSS"
+  }
+}

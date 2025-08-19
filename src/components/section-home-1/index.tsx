@@ -4,14 +4,12 @@ import Image from "next/image";
 import Bg1 from "@/assets/images/bg-1.jpg";
 import { Container } from "../container";
 import MouseIcon from "../mouse-icon";
-
-const words = [
-  "Sviluppatore Fullstack",
-  "Sviluppatore Web & Ecommerce",
-  "Sviluppatore Mobile",
-];
+import { useTranslations } from "next-intl";
 
 const SectionHome_1 = () => {
+  const t = useTranslations("Section_1");
+  const words = [t("skill_1"), t("skill_2"), t("skill_3")];
+
   const [text, setText] = useState(words[0]);
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -62,9 +60,9 @@ const SectionHome_1 = () => {
       {/* Contenuto */}
       <Container>
         <div className="relative flex flex-col justify-center h-screen w-full text-white">
-          <h1 className="mb-1">Ciao, sono Alex Pezzini</h1>
+          <h1 className="mb-1">{t("title")}</h1>
           <h2 className="mb-0 text-[2rem] leading-[2rem] min-h-[6rem] lg:min-h-auto">
-            sono uno{" "}
+            {t("subtitle")}
             <span className="border-r-2 border-white animate-blink text-primary-500">
               {text}
             </span>
