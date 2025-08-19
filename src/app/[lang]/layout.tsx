@@ -1,4 +1,5 @@
 import "@/assets/styles/globals.css";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { TLang } from "@/types";
 import type { Metadata } from "next";
@@ -39,6 +40,7 @@ export default async function RootLayout(props: {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -6,60 +6,79 @@ import Ecommerce from "@/assets/images/ecommerce.svg";
 
 const SectionHome_3 = () => {
   return (
-    <div className="h-full w-full relative bg-primary-800 overflow-hidden text-white">
+    <div
+      className="h-full w-full relative bg-primary-800 overflow-hidden text-white"
+      id="section-home-3"
+    >
       <Container>
         <div className="py-32">
-          <h2>Sviluppo</h2>
-          <div className="flex flex-col gap-8">
-            <div className="flex gap-8 w-full">
-              <div>
+          <h2 className="mb-20">Sviluppo</h2>
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col md:flex-row gap-10 w-full">
+              {/* Testo - 2/3 da desktop */}
+              <div className="md:w-2/3">
                 <h3>Web Site & Web Applications</h3>
                 <p>
-                  Progetto e realizzo siti e applicazioni web moderni, veloci e
-                  sicuri, su misura per aziende e professionisti. Utilizzo
-                  tecnologie come React, Next.js e Node.js per garantire
-                  prestazioni elevate e un design responsive. Grazie
-                  all’esperienza con CMS come Drupal, Strapi e Payload, offro
-                  soluzioni flessibili, scalabili e facili da gestire.
+                  Progetto e sviluppo <strong>siti e applicazioni web</strong>{" "}
+                  tailor-made completamente gestibili in autonomia dagli utenti
+                  amministrativi creando soluzioni personalizzate come aree
+                  riservate, portali aziendali, intranet e dashboard
+                  interattive. Nel frontend mi affido a tecnologie moderne come{" "}
+                  <strong>Next.js, React e TypeScript</strong>. La mia
+                  esperienza include anche l'utilizzo di numerosi CMS, sia nella
+                  loro versione tradizionale che headless. In particolare, ho
+                  una approfondita conoscenza di <strong>Drupal</strong> e sono
+                  in grado di integrare nuove funzionalità con sistemi esistenti
+                  o di realizzare progetti completamente personalizzati.
                 </p>
               </div>
-              <div>
-                <Website width={420} />
+
+              {/* Logo/Icona - 1/3 da desktop */}
+              <div className="relative -top-10 md:w-1/3">
+                <Website />
               </div>
             </div>
 
-            <div className="flex gap-8 w-full">
-              <div>
+            <div className="flex flex-col md:flex-row gap-10 w-full">
+              {/* Testo - 2/3 da desktop */}
+              <div className="md:w-2/3">
                 <h3>Mobile First & PWA</h3>
                 <p>
-                  Sviluppo applicazioni mobile performanti e intuitive,
-                  compatibili con dispositivi iOS e Android, utilizzando
-                  tecnologie cross-platform come React Native. L’obiettivo è
-                  fornire un’esperienza fluida e coinvolgente, integrata con
-                  servizi e API personalizzati, così da offrire agli utenti la
-                  massima funzionalità e alle aziende uno strumento potente per
-                  raggiungere il proprio pubblico ovunque si trovi.
+                  Sviluppo interfacce con un approccio mobile first, garantendo
+                  un'esperienza ottimale su smartphone e tablet fin dalle prime
+                  fasi del progetto. Inoltre creo{" "}
+                  <strong>Progressive Web App (PWA)</strong>, applicazioni web
+                  che combinano le funzionalità di un sito con quelle di un'app
+                  nativa: installabili direttamente sul dispositivo, accessibili
+                  offline e con tempi di caricamento ridotti.
                 </p>
               </div>
-              <div>
-                <Mobile width={420} />
+
+              {/* Logo/Icona - 1/3 da desktop */}
+              <div className="relative -top-10 md:w-1/3">
+                <Mobile />
               </div>
             </div>
 
-            <div className="flex gap-8 w-full">
-              <div>
-                <h3>E-Commerce & B2B</h3>
+            <div className="flex flex-col md:flex-row gap-10 w-full">
+              {/* Testo - 2/3 da desktop */}
+              <div className="md:w-2/3">
+                <h3>Ecommerce & B2B</h3>
                 <p>
-                  Progetto e realizzo siti e applicazioni web moderni, veloci e
-                  sicuri, su misura per aziende e professionisti. Utilizzo
-                  tecnologie come React, Next.js e Node.js per garantire
-                  prestazioni elevate e un design responsive. Grazie
-                  all’esperienza con CMS come Drupal, Strapi e Payload, offro
-                  soluzioni flessibili, scalabili e facili da gestire.
+                  Realizzo piattaforme{" "}
+                  <strong>Ecommerce e soluzioni B2B</strong>, avendo maturato
+                  una lunga esperienza nello sviluppo di sistemi di vendita
+                  online sia per il mercato consumer che per quello aziendale.
+                  Questa competenza è supportata dalla certificazione ufficiale
+                  di <strong>BigCommerce Developer</strong>, che mi permette di
+                  integrare al meglio flussi di acquisto, cataloghi complessi e
+                  interfacce personalizzate per esigenze specifiche.
                 </p>
               </div>
-              <div>
-                <Ecommerce width={500} />
+
+              {/* Logo/Icona - 1/3 da desktop */}
+              <div className="relative -top-10 md:w-1/3">
+                <Ecommerce />
               </div>
             </div>
           </div>

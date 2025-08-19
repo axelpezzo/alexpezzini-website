@@ -7,7 +7,7 @@ import MouseIcon from "../mouse-icon";
 
 const words = [
   "Sviluppatore Fullstack",
-  "Sviluppatore Web",
+  "Sviluppatore Web & Ecommerce",
   "Sviluppatore Mobile",
 ];
 
