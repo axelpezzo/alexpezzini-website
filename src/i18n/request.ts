@@ -1,6 +1,13 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "./routing";
+import itMessages from "../../messages/it.json";
+import enMessages from "../../messages/en.json";
+
+const messagesMap = {
+  it: itMessages,
+  en: enMessages,
+};
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
@@ -10,6 +17,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
+    messages: messagesMap[locale],
   };
 });
