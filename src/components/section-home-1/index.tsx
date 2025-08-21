@@ -15,9 +15,9 @@ const SectionHome_1 = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    let typingSpeed = 100;
-    let deletingSpeed = 40;
-    let pause = 1000;
+    const typingSpeed = 100;
+    const deletingSpeed = 40;
+    const pause = 1000;
 
     const currentWord = words[wordIndex % words.length];
 

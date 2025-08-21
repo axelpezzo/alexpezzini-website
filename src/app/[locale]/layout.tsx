@@ -3,7 +3,6 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { routing } from "@/i18n/routing";
 import { TLang } from "@/types";
-import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Instrument_Serif, Roboto } from "next/font/google";
@@ -25,9 +24,9 @@ const instrumentSerif = Instrument_Serif({
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: TLang }>;
 }) {
-  const messages = await getMessages({ locale: params.locale });
+  const messages = await getMessages({ locale: (await params).locale });
   const meta = messages.Meta;
 
   return {
