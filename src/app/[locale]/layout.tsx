@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { TLang } from "@/types";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { Instrument_Serif, Roboto } from "next/font/google";
 import { notFound } from "next/navigation";
 
@@ -21,11 +22,19 @@ const instrumentSerif = Instrument_Serif({
   weight: "400",
 });
 
-export const metadata: Metadata = {
-  title: "Alex Pezzini - Sviluppatore Web Fullstack",
-  description:
-    "Sviluppatore web full-stack specializzato in React, Next.js e TypeScript, certificato sviluppatore BigCommerce ed esperto di Drupal CMS.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const messages = await getMessages({ locale: params.locale });
+  const meta = messages.Meta;
+
+  return {
+    title: meta.title,
+    description: meta.description,
+  };
+}
 
 export default async function RootLayout(props: {
   children: React.ReactNode;

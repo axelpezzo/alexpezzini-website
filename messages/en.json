@@ -17,5 +17,40 @@
     "skill_2": "<strong>Infrastructure:</strong> Amazon Web Services, Docker, Kubernetes, GitHub / GitLab",
     "skill_3": "<strong>Backend:</strong> Node.js, PHP, GraphQL, REST APIs",
     "skill_4": "<strong>Frontend:</strong> React, Next.js, TypeScript, Tailwind CSS"
+  },
+  "Section_3": {
+    "title": "Development",
+    "block_1_title": "Web Sites & Web Applications",
+    "block_1_text": "I design and develop tailor-made <strong>websites and web applications</strong> that can be fully managed by administrative users, creating customized solutions such as private areas, corporate portals, intranets, and interactive dashboards. On the frontend, I rely on modern technologies such as <strong>Next.js, React, and TypeScript</strong>. My experience also includes the use of numerous CMSs, both in their traditional and headless versions. In particular, I have in-depth knowledge of <strong>Drupal</strong> and I am able to integrate new features with existing systems or develop fully customized projects.",
+    "block_2_title": "Mobile First & PWA",
+    "block_2_text": "I develop interfaces with a mobile-first approach, ensuring an optimal experience on smartphones and tablets from the early stages of the project. I also create <strong>Progressive Web Apps (PWAs)</strong>, web applications that combine the features of a website with those of a native app: installable directly on the device, accessible offline, and with reduced loading times.",
+    "block_3_title": "Ecommerce & B2B",
+    "block_3_text": "I build <strong>Ecommerce platforms and B2B solutions</strong>, having gained extensive experience in developing online sales systems for both consumer and business markets. This expertise is supported by my official <strong>BigCommerce Developer</strong> certification, which enables me to optimally integrate purchasing flows, complex catalogs, and customized interfaces for specific needs."
+  },
+  "Section_4": {
+    "title": "Training",
+    "block_1_title": "ITS Digital Academy",
+    "block_1_text": "My experience as an ITS teacher for the <strong>Fullstack Web Developer</strong> course has allowed me to turn complex concepts into clear and concise explanations, guiding students in acquiring technical skills that are immediately applicable in the job market. Each training path is tailored, calibrated according to the starting level and the goals to be achieved, and developed through a hands-on, project-oriented approach that combines theory with real-world application."
+  },
+  "Section_5": {
+    "title": "Contacts",
+    "subtitle": "For any information you can:",
+    "block_1_title": "Send me an email",
+    "block_2_title": "Contact me on LinkedIn",
+    "block_3_title": "Download my CV"
+  },
+  "Meta": {
+    "title": "Alex Pezzini - Fullstack Web Developer",
+    "description": "Full-stack web developer specialized in React, Next.js and TypeScript, certified BigCommerce developer and Drupal CMS expert."
+  },
+  "Header": {
+    "menu_1": "Intro",
+    "menu_2": "Career",
+    "menu_3": "Development",
+    "menu_4": "Training",
+    "menu_5": "Contacts"
+  },
+  "Footer": {
+    "copyrights": "Alex Pezzini - All rights reserved."
   }
 }

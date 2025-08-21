@@ -6,10 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Logo from "@/assets/logo.png";
 import LangSwitcher from "../switcher/lang-switcher";
 import { Container } from "../container";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("Header");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +22,11 @@ const Header = () => {
   }, []);
 
   const menuItems = [
-    { name: "Intro", href: "#", target: "section-home-1" },
-    { name: "Carriera", href: "#", target: "section-home-2" },
-    { name: "Sviluppo", href: "#", target: "section-home-3" },
-    { name: "Formazione", href: "#", target: "section-home-4" },
-    { name: "Contatti", href: "#", target: "section-home-5" },
+    { name: t("menu_1"), href: "#", target: "section-home-1" },
+    { name: t("menu_2"), href: "#", target: "section-home-2" },
+    { name: t("menu_3"), href: "#", target: "section-home-3" },
+    { name: t("menu_4"), href: "#", target: "section-home-4" },
+    { name: t("menu_5"), href: "#", target: "section-home-5" },
   ];
 
   const handleOnClick = (

@@ -1,8 +1,11 @@
 import React from "react";
 import { Container } from "../container";
 import Education from "@/assets/images/education.svg";
+import { useTranslations } from "next-intl";
 
 const SectionHome_4 = () => {
+  const t = useTranslations("Section_4");
+
   return (
     <div
       className="h-full w-full relative bg-white overflow-hidden"
@@ -10,22 +13,17 @@ const SectionHome_4 = () => {
     >
       <Container>
         <div className="py-24 lg:py-32">
-          <h2 className="mb-12 lg:mb-20">Formazione</h2>
+          <h2 className="mb-12 lg:mb-20">{t("title")}</h2>
           <div className="flex flex-col gap-12">
             <div className="flex flex-col md:flex-row gap-10 w-full">
               {/* Testo - 2/3 da desktop */}
               <div className="md:w-2/3">
-                <h3>ITS Digital Academy</h3>
+                <h3>{t("block_1_title")}</h3>
                 <p>
-                  La mia esperienza come docente ITS per il corso di{" "}
-                  <strong>Sviluppatore Web Fullstack</strong> mi ha consentito
-                  di trasformare concetti complessi in spiegazioni chiare e
-                  sintetiche, guidando i ragazzi nell'acquisizione di competenze
-                  tecniche immediatamente spendibili nel mondo del lavoro. Ogni
-                  percorso formativo è studiato su misura, calibrato in base al
-                  livello di partenza e agli obiettivi da raggiungere, e si
-                  sviluppa attraverso un approccio pratico e orientato a
-                  progetti reali, così da unire teoria e applicazione concreta.
+                  {t.rich("block_1_text", {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                    i: (chunks) => <i>{chunks}</i>,
+                  })}
                 </p>
               </div>
 
