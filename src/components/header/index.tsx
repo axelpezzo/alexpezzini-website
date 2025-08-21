@@ -125,6 +125,7 @@ const Header = () => {
                       {item.name}
                     </Link>
                   ))}
+                  <LangSwitcher />
                 </motion.div>
               )}
             </AnimatePresence>
