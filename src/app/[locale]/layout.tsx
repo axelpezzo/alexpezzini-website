@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import { routing } from "@/i18n/routing";
 import { TLang } from "@/types";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { Instrument_Serif, Roboto } from "next/font/google";
 import { notFound } from "next/navigation";
 
@@ -47,6 +47,8 @@ export default async function RootLayout(props: {
     notFound();
   }
 
+  setRequestLocale(locale);
+
   return (
     <html
       lang={locale}
@@ -63,6 +65,6 @@ export default async function RootLayout(props: {
   );
 }
 
-export async function generateStaticParams() {
-  return [{ locale: "it" }, { locale: "en" }];
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
