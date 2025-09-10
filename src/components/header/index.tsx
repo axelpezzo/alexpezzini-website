@@ -7,11 +7,13 @@ import Logo from "@/assets/logo.png";
 import LangSwitcher from "../switcher/lang-switcher";
 import { Container } from "../container";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("Header");
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +52,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-6">
           {/* Logo */}
           <div className="flex items-center fixed z-55 left-6 top-4 lg:static">
-            <Link href="/">
+            <Link href={{ pathname }}>
               <Image
                 src={Logo}
                 className="h-[50px] lg:h-[60px] w-auto"

@@ -50,7 +50,7 @@ const SectionHome_1 = () => {
   };
 
   return (
-    <div className="relative h-screen w-full" id="section-home-1">
+    <section className="relative h-screen w-full" id="section-home-1">
       {/* Immagine di sfondo */}
       <Image src={Bg1} alt="Sfondo" fill priority className="object-cover" />
 
@@ -75,7 +75,7 @@ const SectionHome_1 = () => {
       >
         <MouseIcon />
       </div>
-    </div>
+    </section>
   );
 };
 

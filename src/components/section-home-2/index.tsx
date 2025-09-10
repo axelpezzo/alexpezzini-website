@@ -6,7 +6,7 @@ const SectionHome_2 = () => {
   const t = useTranslations("Section_2");
 
   return (
-    <div
+    <section
       className="h-full w-full relative bg-white overflow-hidden"
       id="section-home-2"
     >
@@ -84,7 +84,7 @@ const SectionHome_2 = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

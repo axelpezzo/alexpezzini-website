@@ -10,13 +10,13 @@ const Home = async ({ params }: { params: Promise<{ locale: string }> }) => {
   setRequestLocale(locale);
 
   return (
-    <div className="">
+    <main>
       <SectionHome_1 />
       <SectionHome_2 />
       <SectionHome_3 />
       <SectionHome_4 />
       <SectionHome_5 />
-    </div>
+    </main>
   );
 };
 

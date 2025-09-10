@@ -5,33 +5,29 @@ import { routing } from "@/i18n/routing";
 import { TLang } from "@/types";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { Instrument_Serif, Roboto } from "next/font/google";
 import { notFound } from "next/navigation";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  variable: "--font-roboto",
-  display: "swap",
-});
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  variable: "--font-instrument-serif",
-  display: "swap",
-  weight: "400",
-});
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: TLang }>;
 }) {
-  const messages = await getMessages({ locale: (await params).locale });
+  const locale = (await params).locale;
+  const messages = await getMessages({ locale: locale });
   const meta = messages.Meta;
 
   return {
     title: meta.title,
     description: meta.description,
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        it: `${BASE_URL}/it`,
+        en: `${BASE_URL}/en`,
+      },
+    },
   };
 }
 
@@ -50,18 +46,11 @@ export default async function RootLayout(props: {
   setRequestLocale(locale);
 
   return (
-    <html
-      lang={locale}
-      className={`${roboto.variable} ${instrumentSerif.variable}`}
-    >
-      <body>
-        <NextIntlClientProvider>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider>
+      <Header />
+      {children}
+      <Footer />
+    </NextIntlClientProvider>
   );
 }
 
