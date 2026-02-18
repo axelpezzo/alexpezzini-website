@@ -2,6 +2,9 @@ import React from "react";
 import { Container } from "../container";
 import { useTranslations } from "next-intl";
 
+const MAX_PARAGRAPHS = 6;
+const TINYREX_URL = "https://www.tinyrex.it/";
+
 const SectionHome_2 = () => {
   const t = useTranslations("Section_2");
 
@@ -14,48 +17,25 @@ const SectionHome_2 = () => {
         <div className="py-24 lg:py-32">
           <h2>{t("title")}</h2>
           <div>
-            <p>
-              {t.rich("p_1", {
-                strong: (chunks) => <strong>{chunks}</strong>,
-                i: (chunks) => <i>{chunks}</i>,
-              })}
-            </p>
-            <p>
-              {t.rich("p_2", {
-                strong: (chunks) => <strong>{chunks}</strong>,
-                i: (chunks) => <i>{chunks}</i>,
-              })}
-            </p>
-            <p>
-              {t.rich("p_3", {
-                strong: (chunks) => <strong>{chunks}</strong>,
-                i: (chunks) => <i>{chunks}</i>,
-                link: (chunks) => (
-                  <a
-                    href="https://www.intesys.it/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {chunks}
-                  </a>
-                ),
-              })}
-            </p>
-            <p>
-              {t.rich("p_4", {
-                strong: (chunks) => <strong>{chunks}</strong>,
-                i: (chunks) => <i>{chunks}</i>,
-                link: (chunks) => (
-                  <a
-                    href="https://www.itslogistica.it/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {chunks}
-                  </a>
-                ),
-              })}
-            </p>
+            {Array.from({ length: MAX_PARAGRAPHS }, (_, i) => i + 1).map(
+              (n) => (
+                <p key={n}>
+                  {t.rich(`p_${n}`, {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                    i: (chunks) => <i>{chunks}</i>,
+                    tinyrex: (chunks) => (
+                      <a
+                        href={TINYREX_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {chunks}
+                      </a>
+                    ),
+                  })}
+                </p>
+              )
+            )}
           </div>
           <div className="mt-20">
             <h3>{t("skill_title")}</h3>
