@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../container";
 import { useTranslations } from "next-intl";
 
-const MAX_PARAGRAPHS = 6;
+const MAX_PARAGRAPHS = 3;
 const TINYREX_URL = "https://www.tinyrex.it/";
 
 const SectionHome_2 = () => {
@@ -28,6 +28,7 @@ const SectionHome_2 = () => {
                         href={TINYREX_URL}
                         target="_blank"
                         rel="noopener noreferrer"
+                        title={t("tinyrex_link_title")}
                       >
                         {chunks}
                       </a>

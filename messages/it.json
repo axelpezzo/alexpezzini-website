@@ -8,34 +8,40 @@
   },
   "Section_2": {
     "title": "Carriera",
-    "p_1": "Sono uno sviluppatore web fullstack con oltre <strong>15 anni di esperienza</strong>, specializzato nella progettazione di soluzioni frontend, architetture headless e integrazioni API.",
-    "p_2": "Il mio percorso mi ha portato a maturare una forte competenza tecnica, in particolare nell'ecosistema <strong>Drupal</strong> e nelle tecnologie moderne come <strong>React, TypeScript e Next.js</strong>, con un approccio che unisce lo sviluppo puro alla gestione dell'infrastruttura cloud.",
-    "p_3": "Nel corso della mia carriera ho guidato team tecnici nella realizzazione di piattaforme digitali per brand di rilievo nazionale come <strong>Paluani, Borsalino, Bertazzoni e Fedrigoni</strong>, curando ogni aspetto del progetto: dall'interfaccia utente alla SEO.",
-    "p_4": "Tra il 2020 e il 2026, come <strong>Senior Developer in Intesys</strong> (oggi parte del gruppo Lynx), ho consolidato la mia esperienza nei settori <strong>Industrial e Fintech</strong>, lavorando su ecosistemi complessi e integrazioni di terze parti in contesti enterprise.",
-    "p_5": "Parallelamente all'attività tecnica, dal 2025 insegno sviluppo fullstack presso <strong>l'ITS Digital Academy</strong>, un'esperienza che mi permette di trasmettere le competenze maturate negli anni alle nuove generazioni di sviluppatori.",
-    "p_6": "Dal 2026 ho scelto di intraprendere la libera professione con la mia realtà, <tinyrex>TinyREX</tinyrex>, per mettere questo bagaglio di competenze a disposizione delle PMI, supportandole nella creazione di soluzioni digitali su misura.",
+    "p_1": "Sono uno <strong>sviluppatore web fullstack</strong> con oltre 15 anni di esperienza sul campo, specializzato nella progettazione di <strong>architetture frontend moderne</strong> e <strong>integrazioni API</strong> complesse. Lavoro principalmente con <strong>React</strong>, <strong>TypeScript</strong> e <strong>Next.js</strong> per la parte client, e con <strong>Drupal</strong> come backend strutturato e flessibile per la gestione dei contenuti, in architetture <strong>headless</strong> dove i due livelli comunicano attraverso API ben definite. Non è uno stack scelto per abitudine: è la combinazione che, nella mia esperienza, regge meglio quando i requisiti crescono e la complessità aumenta.",
+    "p_2": "Nel corso della carriera ho guidato team tecnici su progetti per brand come Fedrigoni, Borsalino, Paluani e Bertazzoni, curando ogni aspetto dalla progettazione dell'interfaccia utente all'ottimizzazione <strong>SEO</strong>. Tra il 2020 e il 2026 ho lavorato come <strong>Senior Developer</strong> in Intesys, oggi parte del gruppo Lynx, su ecosistemi enterprise nei settori Industrial e Fintech: <strong>integrazioni con sistemi di terze parti</strong>, architetture distribuite, soluzioni che dovevano funzionare sotto pressione senza margine di errore. Dal 2025 insegno <strong>sviluppo fullstack</strong> all'ITS Digital Academy, dove porto in aula metodi e scelte costruiti sul campo in oltre un decennio di progetti reali.",
+    "p_3": "Dal 2026 lavoro in proprio con <tinyrex>TinyREX</tinyrex>, la mia realtà di consulenza dedicata alle <strong>PMI italiane</strong>. Dopo anni in contesti enterprise ho capito che le aziende di dimensioni medie hanno spesso gli stessi problemi tecnici delle grandi, ma raramente accesso alle stesse competenze. È il gap che cerco di colmare: <strong>soluzioni digitali su misura</strong>, solide e manutenibili, costruite con tecnologie moderne e pensate per durare nel tempo.",
+    "tinyrex_link_title": "TinyREX - Digital Evolution Partner",
     "skill_title": "Competenze",
-    "skill_1": "<strong>Piattaforme:</strong> Drupal, Strapi, Payload CMS, BigCommerce, HubSpot",
-    "skill_2": "<strong>Infrastruttura:</strong> Amazon Web Services, Docker, Kubernetes, GitHub / GitLab",
-    "skill_3": "<strong>Backend:</strong> Node.js, PHP, GraphQL, REST APIs",
+    "skill_1": "<strong>CMS/DXP:</strong> Drupal, Shopify, BigCommerce, HubSpot, Strapi",
+    "skill_2": "<strong>Cloud:</strong> Amazon Web Services, Docker, GitHub / GitLab",
+    "skill_3": "<strong>Backend:</strong> Node.js, GraphQL, REST API",
     "skill_4": "<strong>Frontend:</strong> React, Next.js, TypeScript, Tailwind CSS"
   },
   "Section_3": {
     "title": "Sviluppo",
     "block_1_title": "Web Site & Web Applications",
-    "block_1_text": "Progetto e sviluppo <strong>siti e applicazioni web</strong> tailor-made completamente gestibili in autonomia dagli utenti amministrativi creando soluzioni personalizzate come aree riservate, portali aziendali, intranet e dashboard interattive. Nel frontend mi affido a tecnologie moderne come <strong>Next.js, React e TypeScript</strong>. La mia esperienza include anche l'utilizzo di numerosi CMS, sia nella loro versione tradizionale che headless. In particolare, ho una approfondita conoscenza di <strong>Drupal</strong> e sono in grado di integrare nuove funzionalità con sistemi esistenti o di realizzare progetti completamente personalizzati.",
+    "block_1_text": "Progetto e sviluppo siti e applicazioni web su misura, con un'attenzione particolare a quello che succede dopo la consegna: ogni soluzione deve essere gestibile in autonomia da chi la usa ogni giorno, senza dover chiamare uno sviluppatore per ogni modifica. Lavoro principalmente con <strong>React</strong>, <strong>Next.js</strong> e <strong>TypeScript</strong> sul frontend, e scelgo il CMS in base al progetto, non per abitudine. Ho una conoscenza approfondita di <strong>Drupal</strong>, che uso sia nella sua forma tradizionale che in architettura <strong>headless</strong>, e una lunga esperienza nell'integrare funzionalità custom in sistemi già esistenti, portali aziendali, aree riservate e dashboard interattive inclusi.",
     "block_2_title": "Mobile First & PWA",
-    "block_2_text": "Sviluppo interfacce con un approccio mobile first, garantendo un'esperienza ottimale su smartphone e tablet fin dalle prime fasi del progetto. Inoltre creo <strong>Progressive Web App (PWA)</strong>, applicazioni web che combinano le funzionalità di un sito con quelle di un'app nativa: installabili direttamente sul dispositivo, accessibili offline e con tempi di caricamento ridotti.",
+    "block_2_text": "Progetto le interfacce partendo dallo schermo più piccolo, non come adattamento finale ma come punto di partenza. Significa che l'esperienza su smartphone non è una versione ridotta di quella desktop: è il riferimento su cui si costruisce tutto il resto. Sviluppo anche <strong>Progressive Web App</strong>, applicazioni che vivono nel browser ma si comportano come app native: si installano sul dispositivo, funzionano offline e si caricano velocemente anche su connessioni lente. Per certi tipi di progetto è la scelta più sensata rispetto a un'app nativa, sia in termini di costi che di manutenzione.",
     "block_3_title": "Ecommerce & B2B",
-    "block_3_text": "Realizzo piattaforme <strong>Ecommerce e soluzioni B2B</strong>, avendo maturato una lunga esperienza nello sviluppo di sistemi di vendita online sia per il mercato consumer che per quello aziendale. Questa competenza è supportata dalla certificazione ufficiale di <strong>BigCommerce Developer</strong>, che mi permette di integrare al meglio flussi di acquisto, cataloghi complessi e interfacce personalizzate per esigenze specifiche."
+    "block_3_text": "Ho lavorato su piattaforme di vendita online per mercati molto diversi tra loro, dal consumer al B2B con cataloghi complessi, listini personalizzati per cliente e flussi di acquisto che non assomigliano a nessun template standard. Sono <strong>certificato BigCommerce Developer</strong>, una piattaforma che uso quando il progetto richiede solidità infrastrutturale senza rinunciare alla flessibilità sul frontend. Per i progetti che richiedono un controllo totale sull'architettura, lavoro su soluzioni custom integrate con i sistemi già in uso dal cliente, dai gestionali ai CRM."
   },
   "Section_4": {
     "title": "Formazione",
     "block_1_title": "ITS Digital Academy",
-    "block_1_text": "La mia esperienza come docente ITS per il corso di <strong>Sviluppatore Web Fullstack</strong> mi ha consentito di trasformare concetti complessi in spiegazioni chiare e sintetiche, guidando i ragazzi nell'acquisizione di competenze tecniche immediatamente spendibili nel mondo del lavoro. Ogni percorso formativo è studiato su misura, calibrato in base al livello di partenza e agli obiettivi da raggiungere, e si sviluppa attraverso un approccio pratico e orientato a progetti reali, così da unire teoria e applicazione concreta."
+    "block_1_text": "Dal 2025 insegno sviluppo fullstack presso <strong>ITS Digital Academy</strong>. Non è un'attività collaterale: è il modo in cui ho scelto di restituire qualcosa a una professione che mi ha dato molto. In aula porto quello che ho imparato sui progetti reali, compresi gli errori e le scorciatoie che non funzionano. Il percorso che costruisco con gli studenti è pratico per definizione: si lavora su progetti concreti fin dalle prime settimane, perché il modo migliore per imparare a sviluppare è sviluppare, non studiare come si fa."
   },
   "Section_5": {
     "title": "Contatti",
+    "tinyrex_link_title": "TinyREX - Digital Evolution Partner",
+    "tinyrex_intro": "Con <tinyrex>TinyREX</tinyrex> metto a disposizione la mia esperienza senior in due modalità: come developer esterno per team strutturati o come riferimento tecnico su base frazionata per startup e PMI.",
+    "daas_title": "Developer-as-a-Service",
+    "daas_body": "Mi occupo dello sviluppo e della manutenzione di: siti, applicazioni web, e-commerce e integrazioni API. Posso lavorare direttamente all'interno del tuo team o in autonomia, seguendo il progetto dall'analisi al rilascio.",
+    "daas_cta": "Scopri il mio stack tecnologico",
+    "fcto_title": "Fractional CTO",
+    "fcto_body": "Mi occupo della parte tecnica più strategica: roadmap, architettura, scelta degli strumenti, coordinamento del team. È utile quando serve una figura tecnica senior senza il peso di un'assunzione a tempo pieno.",
+    "fcto_cta": "Parliamo del tuo progetto",
     "subtitle": "Per qualunque informazione puoi:",
     "block_1_title": "Scrivermi una mail",
     "block_2_title": "Contattarmi su LinkedIn",
