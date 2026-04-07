@@ -9,8 +9,8 @@ import {
 import { getTranslations } from "next-intl/server";
 
 const TINYREX_SITE = "https://www.tinyrex.it/it/stack";
-const TINYREX_STACK_URL = "https://www.tinyrex.it/it/stack";
-const TINYREX_CONTACTS_URL = "https://www.tinyrex.it/it/contatti";
+const TINYREX_DAAS = "https://www.tinyrex.it/it/servizi/developer-as-a-service";
+const TINYREX_FCTO = "https://www.tinyrex.it/it/servizi/fractional-cto";
 
 const SectionHome_5 = async () => {
   const t = await getTranslations("Section_5");
@@ -45,7 +45,7 @@ const SectionHome_5 = async () => {
               <a
                 className="inline-flex items-center gap-2 w-fit no-underline font-semibold text-sm rounded-lg bg-primary-800 text-white px-4 py-2.5 hover:bg-primary-950 transition-colors"
                 title="TinyREX - Developer-as-a-Service"
-                href={TINYREX_STACK_URL}
+                href={TINYREX_DAAS}
                 target="_blank"
                 rel="noopener"
               >
@@ -62,7 +62,7 @@ const SectionHome_5 = async () => {
               <a
                 className="inline-flex items-center gap-2 w-fit no-underline font-semibold text-sm rounded-lg bg-white text-primary-800 px-4 py-2.5 hover:bg-primary-100 transition-colors"
                 title="TinyREX - Fractional CTO"
-                href={TINYREX_CONTACTS_URL}
+                href={TINYREX_FCTO}
                 target="_blank"
                 rel="noopener noreferrer"
               >

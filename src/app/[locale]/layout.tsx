@@ -7,8 +7,6 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-
 export async function generateMetadata({
   params,
 }: {
@@ -22,10 +20,11 @@ export async function generateMetadata({
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `${BASE_URL}/${locale}`,
+      canonical: `/${locale}`,
       languages: {
-        it: `${BASE_URL}/it`,
-        en: `${BASE_URL}/en`,
+        it: "/it",
+        en: "/en",
+        "x-default": `/${routing.defaultLocale}`,
       },
     },
   };
