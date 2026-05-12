@@ -7,6 +7,8 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+const BASE_URL = "https://www.alexpezzini.it";
+
 export async function generateMetadata({
   params,
 }: {
@@ -17,6 +19,7 @@ export async function generateMetadata({
   const meta = messages.Meta;
 
   return {
+    metadataBase: new URL(BASE_URL),
     title: meta.title,
     description: meta.description,
     alternates: {
@@ -26,6 +29,23 @@ export async function generateMetadata({
         en: "/en",
         "x-default": `/${routing.defaultLocale}`,
       },
+    },
+    openGraph: {
+      type: "website",
+      url: `/${locale}`,
+      siteName: "Alex Pezzini",
+      title: meta.title,
+      description: meta.description,
+      locale: locale === "it" ? "it_IT" : "en_US",
+      alternateLocale: locale === "it" ? ["en_US"] : ["it_IT"],
+      images: [
+        {
+          url: "/default_image.png",
+          width: 1672,
+          height: 903,
+          alt: meta.title,
+        },
+      ],
     },
   };
 }
