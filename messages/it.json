@@ -10,7 +10,7 @@
     "title": "Carriera",
     "p_1": "Sono uno <strong>sviluppatore web fullstack</strong> con oltre 15 anni di esperienza sul campo, specializzato nella progettazione di <strong>architetture frontend moderne</strong> e <strong>integrazioni API</strong> complesse. Lavoro principalmente con <strong>React</strong>, <strong>TypeScript</strong> e <strong>Next.js</strong> per la parte client, e con <strong>Drupal</strong> come backend strutturato e flessibile per la gestione dei contenuti, in architetture <strong>headless</strong> dove i due livelli comunicano attraverso API ben definite. Non è uno stack scelto per abitudine: è la combinazione che, nella mia esperienza, regge meglio quando i requisiti crescono e la complessità aumenta.",
     "p_2": "Nel corso della carriera ho guidato team tecnici su progetti per brand come Fedrigoni, Borsalino, Paluani e Bertazzoni, curando ogni aspetto dalla progettazione dell'interfaccia utente all'ottimizzazione <strong>SEO</strong>. Tra il 2020 e il 2026 ho lavorato come <strong>Senior Developer</strong> in Intesys, oggi parte del gruppo Lynx, su ecosistemi enterprise nei settori Industrial e Fintech: <strong>integrazioni con sistemi di terze parti</strong>, architetture distribuite, soluzioni che dovevano funzionare sotto pressione senza margine di errore. Dal 2025 insegno <strong>sviluppo fullstack</strong> all'ITS Digital Academy, dove porto in aula metodi e scelte costruiti sul campo in oltre un decennio di progetti reali.",
-    "p_3": "Dal 2026 lavoro in proprio con <tinyrex>TinyREX</tinyrex>, la mia realtà di consulenza dedicata alle <strong>PMI italiane</strong>. Dopo anni in contesti enterprise ho capito che le aziende di dimensioni medie hanno spesso gli stessi problemi tecnici delle grandi, ma raramente accesso alle stesse competenze. È il gap che cerco di colmare: <strong>soluzioni digitali su misura</strong>, solide e manutenibili, costruite con tecnologie moderne e pensate per durare nel tempo.",
+    "p_3": "Dal 2026 lavoro in proprio con <tinyrex>TinyREX</tinyrex>, la mia realtà di consulenza e sviluppo Soluzioni Web su misura dedicata alle <strong>Imprese, Startup e PMI</strong>. Dopo anni in contesti enterprise ho capito che le aziende di dimensioni medie hanno spesso gli stessi problemi tecnici delle grandi, ma raramente accesso alle stesse competenze. È il gap che cerco di colmare: <strong>soluzioni digitali su misura</strong>, solide e manutenibili, costruite con tecnologie moderne e pensate per durare nel tempo.",
     "tinyrex_link_title": "TinyREX - Digital Evolution Partner",
     "skill_title": "Competenze",
     "skill_1": "<strong>CMS/DXP:</strong> Drupal, Shopify, BigCommerce, HubSpot, Strapi",
@@ -35,21 +35,24 @@
   "Section_5": {
     "title": "Contatti",
     "tinyrex_link_title": "TinyREX - Digital Evolution Partner",
-    "tinyrex_intro": "Con <tinyrex>TinyREX</tinyrex> metto a disposizione la mia esperienza senior in due modalità: come developer esterno per team strutturati o come riferimento tecnico su base frazionata per startup e PMI.",
+    "tinyrex_intro": "Con <tinyrex>TinyREX</tinyrex> metto a disposizione la mia esperienza senior in tre aree: sviluppo Drupal specializzato, development esterno per team strutturati e direzione tecnica frazionata per startup e PMI.",
+    "drupal_title": "Drupal Specialist",
+    "drupal_body": "Progetto, sviluppo e manutenzione di soluzioni Drupal su misura: moduli custom, temi, architetture headless e integrazioni API. Oltre 15 anni di esperienza su siti istituzionali, portali enterprise e piattaforme di contenuto scalabili.",
+    "drupal_cta": "Consulenza e sviluppo Drupal",
     "daas_title": "Developer-as-a-Service",
     "daas_body": "Mi occupo dello sviluppo e della manutenzione di: siti, applicazioni web, e-commerce e integrazioni API. Posso lavorare direttamente all'interno del tuo team o in autonomia, seguendo il progetto dall'analisi al rilascio.",
-    "daas_cta": "Scopri di più",
+    "daas_cta": "Sviluppatore senior su richiesta",
     "fcto_title": "Fractional CTO",
     "fcto_body": "Mi occupo della parte tecnica più strategica: roadmap, architettura, scelta degli strumenti, coordinamento del team. È utile quando serve una figura tecnica senior senza il peso di un'assunzione a tempo pieno.",
-    "fcto_cta": "Scopri di più",
+    "fcto_cta": "Direzione tecnica per Startup",
     "subtitle": "Per qualunque informazione puoi:",
     "block_1_title": "Scrivermi una mail",
     "block_2_title": "Contattarmi su LinkedIn",
     "block_3_title": "Scaricare il mio CV"
   },
   "Meta": {
-    "title": "Alex Pezzini - Sviluppatore Web Fullstack",
-    "description": "Sviluppatore web full-stack specializzato in React, Next.js e TypeScript, certificato sviluppatore BigCommerce ed esperto di Drupal CMS."
+    "title": "Alex Pezzini - Sviluppatore Web Senior | Consulente Freelance",
+    "description": "Sviluppatore senior fullstack e consulente freelance. Specializzato in React, Next.js, TypeScript e Drupal per progetti Web e Applicazioni su misura."
   },
   "Header": {
     "menu_1": "Intro",

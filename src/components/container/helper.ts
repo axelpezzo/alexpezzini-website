@@ -3,7 +3,7 @@ export const getContainerSize = (size: string) => {
     case "xl":
       return "max-w-[1340px]";
     case "lg":
-      return "max-w-[1200px]";
+      return "max-w-[1280px]";
     case "md":
       return "max-w-[890px]";
     case "sm":

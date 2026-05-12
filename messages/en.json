@@ -35,10 +35,13 @@
   "Section_5": {
     "title": "Contacts",
     "tinyrex_link_title": "TinyREX - Digital Evolution Partner",
-    "tinyrex_intro": "Through <tinyrex>TinyREX</tinyrex> I offer my senior experience in two ways: as an external developer for structured teams, or as a fractional technical lead for startups and SMEs.",
+    "tinyrex_intro": "Through <tinyrex>TinyREX</tinyrex> I offer my senior experience across three areas: specialised Drupal development, external development for structured teams, and fractional technical leadership for startups and SMEs.",
+    "drupal_title": "Drupal Specialist",
+    "drupal_body": "I design, develop and maintain tailored Drupal solutions: custom modules, themes, headless architectures and API integrations. Over 15 years of experience on institutional sites, enterprise portals and scalable content platforms.",
+    "drupal_cta": "Learn more",
     "daas_title": "Developer-as-a-Service",
     "daas_body": "I handle development and maintenance of: websites, web applications, e-commerce and API integrations. I can work directly within your team or independently, following the project from brief to release.",
-    "daas_cta": "Explore my tech stack",
+    "daas_cta": "Explore my services",
     "fcto_title": "Fractional CTO",
     "fcto_body": "I take care of the more strategic technical side: roadmap, architecture, tooling, team coordination. Useful when you need a senior technical figure without the commitment of a full-time hire.",
     "fcto_cta": "Let's talk about your project",
@@ -48,8 +51,8 @@
     "block_3_title": "Download my CV"
   },
   "Meta": {
-    "title": "Alex Pezzini - Fullstack Web Developer",
-    "description": "Full-stack web developer specialized in React, Next.js and TypeScript, certified BigCommerce developer and Drupal CMS expert."
+    "title": "Alex Pezzini - Senior Fullstack Developer | Freelance Consultant",
+    "description": "Senior fullstack developer and freelance consultant. Specialized in React, Next.js, TypeScript and Drupal for web and application projects."
   },
   "Header": {
     "menu_1": "Intro",
